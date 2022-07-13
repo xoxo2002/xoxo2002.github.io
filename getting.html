@@ -38,11 +38,16 @@
                 font-weight: bold;
                 font-size: 30px;
                 padding: 15px 15px;
-                top: 41%;
+                top: 39%;
+                transition: all 0.1s ease;
+            }
+            .prev{
+                position:absolute;
+                left: -2px;
             }
             .next{
                 position:absolute;
-                right: 0px;
+                right: -2px;
             }
             .dot{
                 cursor: pointer;
@@ -58,6 +63,12 @@
             .fade{
                 animation-name: fade;
                 animation-duration: 0.7s;
+            }
+            .next:hover{
+                right: -7px;
+            }
+            .prev:hover{
+                left: -7px;
             }
             @keyframes fade{
                 from {opacity: .4} 
@@ -78,7 +89,7 @@
             @media screen and (max-width: 500px){
                 .container{
                     width:275px;
-                    height: 175px;
+                    height: 179px;
                     margin-left: -5px;
                 }
                 .container img{
@@ -151,10 +162,10 @@
                 <div class="share">
                     <p><b>Found this interesting? Share with a friend :)</b></p>
                     <div class="iconbar">
-                        <a class="facebook" href="#"><img src="./pictures/facebook.svg"></a>
-                        <a class="twitter" href="#"><img src="./pictures/twitter.svg"></a>
-                        <a class="whatsapp" href="#"><img src="./pictures/whatsapp.svg"></a>
-                        <a class="messenger" href="#"><img src="./pictures/messenger.svg"></a>
+                        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://xoxo2002.github.io/getting.html#"&quote=Awesome%20Blog!"><img src="./pictures/facebook.svg"></a>
+                        <a class="messenger" href="https://www.reddit.com/submit?url=https://xoxo2002.github.io/getting.html#"&title=Awesome%20Blog!"><img src="./pictures/reddit.svg"></a>
+                        <a class="twitter" href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url=https://xoxo2002.github.io/getting.html#"><img src="./pictures/twitter.svg"></a>
+                        <a class="whatsapp" href="https://wa.me/?text=Awesome%20Blog!%5Cn%20https://xoxo2002.github.io/getting.html#""><img src="./pictures/whatsapp.svg"></a>
                     </div>
                 </div>
 
@@ -166,12 +177,11 @@
         </div>
         <!--sidenav-->
         <div class="sideicon">
-            <div>
-                <a class="facebook" href="#"><img src="./pictures/facebook.svg"></a>
-                <a class="twitter" href="#"><img src="./pictures/twitter.svg"></a>
-                <a class="whatsapp" href="#"><img src="./pictures/whatsapp.svg"></a>
-                <a class="messenger" href="#"><img src="./pictures/messenger.svg"></a>
-            
+            <div class="iconbar">
+                <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://xoxo2002.github.io/getting.html#"&quote=Awesome%20Blog!"><img src="./pictures/facebook.svg"></a>
+                <a class="messenger" href="https://www.reddit.com/submit?url=https://xoxo2002.github.io/getting.html#"&title=Awesome%20Blog!"><img src="./pictures/reddit.svg"></a>
+                <a class="twitter" href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url=https://xoxo2002.github.io/getting.html#"><img src="./pictures/twitter.svg"></a>
+                <a class="whatsapp" href="https://wa.me/?text=Awesome%20Blog!%5Cn%20https://xoxo2002.github.io/getting.html#""><img src="./pictures/whatsapp.svg"></a>
             </div>
         </div>
  
@@ -210,7 +220,6 @@
                                 <div class="dotCont">
                                     <span class="dot" onclick="currentSlides(0)"></span>
                                     <span class="dot" onclick="currentSlides(1)"></span>
-                                   
                                 </div>
                             </div>
                         </div>

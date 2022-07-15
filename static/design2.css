@@ -263,6 +263,7 @@ th, td{
 .iconbar{
     text-align: center;
     margin-top: 20px;
+  
 }
 .iconbar a img, .sideicon a img{
     height: 20px;
@@ -318,6 +319,7 @@ article p{
     border: none;
     background-color: white;
 }
+
 .dropdown{
     display: flex;
     align-items: center;
@@ -370,7 +372,7 @@ input:focus{
 input[type=number]{
     width: 30%;
 }
-input[type=submit]{
+input[type=submit], .interactive button{
     border: 1px solid black;
     margin: 15px auto;
     width:fit-content;
@@ -382,8 +384,9 @@ input[type=submit]{
     color: white;
     padding: 10px 10px;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
-input[type=submit]:hover{
+input[type=submit]:hover, .interactive button:hover{
     border: 1px solid rgb(57, 132, 207);
     background-color: rgb(57, 132, 207);
 }
@@ -399,11 +402,7 @@ input[type=submit]:hover{
 .date{
     font-family: 'Montserrat', sans-serif;  
 }
-.s1{
-    border: none;
-    width: 315px;
-    float: right;
-}
+
 .field{
     margin-bottom: 19px;
 }
@@ -442,6 +441,17 @@ input[type=submit]:hover{
     right:20px;
     cursor:pointer;
 }
+.interactive{
+    display: flex;
+    align-items: center;    
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.interactive img{
+    margin-left: 5%;
+}
+span.nobr { white-space: nowrap; }
 @media screen and (min-width: 950px){
     .sideicon{
         display: none;
@@ -539,10 +549,6 @@ input[type=submit]:hover{
     .content .explanation{
         margin-left: 10%;
         margin-right: 5%;
-    }
-    .s1{
-        float: none;
-        margin-left: 18%;
     }
 }
 @media screen and (max-width: 1100px){

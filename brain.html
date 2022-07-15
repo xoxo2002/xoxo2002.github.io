@@ -25,6 +25,11 @@
 
 
         <style>
+            .s1{
+                border: none;
+                width: 315px;
+                float: right;
+            }
             .slides{
                 display: none;
             }
@@ -35,16 +40,15 @@
             }
             .prev, .next{
                 cursor: pointer;
-                position: absolute;
                 font-weight: bold;
                 font-size: 25px;
                 padding: 7px 7px;
                 top: 41%;
                 transition: all 0.1s ease;
-               }
+            }
             .prev{
                 position:absolute;
-                left: 10px;
+                left:10px;
             }
             .next{
                 position:absolute;
@@ -80,6 +84,9 @@
                     width:300px;
                     height: 300px;
                 }
+                .s1{
+                    width:300px;
+                }
                 .dotCont{
                     width: 300px;
                 }
@@ -96,6 +103,9 @@
                     height: 300px;
                     width: 250px;
                     margin-left: -50px;
+                }
+                .s1{
+                    width:250px;
                 }
                 .dotCont{
                     width: 250px;
@@ -115,6 +125,12 @@
                     top: 42%;
                 }
 
+            }
+            @media screen and (max-width: 1050px){
+                .s1{
+                    float: none;
+                    margin-left: 18%;
+                }
             }
         </style>
     </head>

@@ -505,6 +505,10 @@ span.nobr { white-space: nowrap; }
         margin: 0 0;
         width: 100%;
     }
+    .sticky{
+        left:0;
+        right: 0;
+    }
     .sideicon{
         right: 0px;
     }

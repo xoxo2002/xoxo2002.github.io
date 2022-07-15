@@ -1,15 +1,12 @@
 const form = document.getElementById('subform');
-            console.log("pass1");
-
             form.addEventListener('submit',(e)=>{
                 e.preventDefault();
                 var msg = document.getElementById('success');
                 msg.style.display = "flex";
                 setTimeout(function(){
                     msg.style.display = "none";}, 5000);
-                console.log("pass");
-                form.reset();
-                resetstyle();
+                    form.reset();
+                    resetstyle();
             })
 
             function resetstyle(){
@@ -25,7 +22,6 @@ const form = document.getElementById('subform');
             window.onscroll = function(){sticky()};
 
             var banner = document.getElementById("successcon");
-            console.log(window.pageYOffset);
 
             function sticky(){
                 if(window.pageYOffset > 20){

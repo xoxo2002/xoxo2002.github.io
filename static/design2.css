@@ -577,3 +577,9 @@ span.nobr { white-space: nowrap; }
     }
 
 }
+@media screen and (max-width: 600px){
+    .corner img{
+        width: 190px;
+        height: auto;
+    }
+}
